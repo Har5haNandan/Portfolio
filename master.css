@@ -1,0 +1,183 @@
+ /* General CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFE5B4; /* Warm beige color */
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
+        }
+
+        /* Profile Section */
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #007BFF;
+        }
+
+        .profile .details {
+            flex: 1;
+        }
+
+        .profile .details p {
+            margin: 5px 0;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio .item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .portfolio .item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .portfolio .item .description {
+            padding: 10px;
+        }
+
+        .portfolio .file-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .portfolio .file-link a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        /* Skill Summary Section */
+        .skill-summary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center; /* Center-align items */
+        }
+
+        .skill-summary .skill {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #007BFF;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .skill-summary .skill h3 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+        }
+
+        /* Career Highlights Section */
+        .career-highlights {
+            list-style: none;
+            padding: 0;
+        }
+
+        .career-highlights li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .career-highlights li::before {
+            content: '\2022';
+            color: #007BFF;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Education Section */
+        .education {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education li {
+            margin-bottom: 15px;
+        }
+
+        .education li h4 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #007BFF;
+        }
+
+        .education li p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+        }
+
+        /* Certifications Section */
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center; /* Center-align items */
+        }
+
+        .certifications .cert {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Contact Details Section */
+        .contact {
+            text-align: center; /* Center-align section */
+            margin-top: 20px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
